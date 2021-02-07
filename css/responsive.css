@@ -244,7 +244,7 @@
 /* Ipad Pro Layout: 1024px. */
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    .menu ul li {
+    /* .menu ul li {
         list-style: none;
         display: inline-block;
         margin-left: 10px;
@@ -278,7 +278,7 @@
         text-align: center;
         top: 45px;
         left: 135px;
-    }
+    } */
 }
 
 /* Iphone 5/SE Layout: 320px. */
