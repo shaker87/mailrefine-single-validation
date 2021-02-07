@@ -1,0 +1,532 @@
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fix {
+    overflow: hidden
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.test {
+    font-family: 'Nunito', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+/* Navigation Area Start Here */
+
+.navigation-area {
+    width: 100%;
+    height: 56px;
+}
+
+.navigation-area .logo {
+    height: 45px;
+    width: 200px;
+}
+
+.menu {
+    position: relative;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu .menu-item a {
+    padding: 15px 25px;
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .menu-item {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu .menu-item a span {
+    margin-left: 15px;
+}
+
+.menu .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: -30px;
+    right: 12px;
+}
+
+.menu .nav-icon {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #000;
+    transition: background .2s ease-out;
+}
+
+.menu .menu-icon .nav-icon::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: 7px;
+    transition: all .2s ease-out;
+}
+
+.menu .menu-icon .nav-icon::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: -7px;
+    transition: all .2s ease-out;
+}
+
+.menu .menu-btn {
+    display: none;
+}
+
+.menu .menu-btn:checked~.menu-item {
+    width: 100%;
+    max-height: 800px;
+    background-color: #345997;
+    position: relative;
+    top: 11px;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu .menu-btn:checked~.menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media only screen and (min-width:768px) {
+    .navigation-area .logo {
+        height: 45px;
+        width: 200px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu .menu-item a {
+        all: unset;
+        color: #000;
+    }
+    .menu .menu-item {
+        all: unset;
+        height: 56px;
+        line-height: 56px;
+    }
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 50px;
+        cursor: pointer;
+        color: #000;
+    }
+    .menu ul li:first-child {
+        margin-left: 0px;
+    }
+    .menu ul li:last-child {
+        margin-left: 200px;
+    }
+    .menu ul li a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+    }
+    .menu ul li a span {
+        margin-left: 10px;
+    }
+    .menu .menu-item a:hover {
+        background: transparent;
+    }
+    .menu .menu-icon {
+        display: none;
+    }
+    .menu .menu-item img {
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+    #myDIV {
+        position: absolute;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
+        height: 200px;
+        width: 180px;
+        font-family: 'Nunito', sans-serif;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.header-box {
+    height: 47px;
+    width: 180px;
+    background-color: aqua;
+}
+
+.header-box h6 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-box h6 span {
+    display: block;
+    font-size: 11px;
+    color: rgba(57, 57, 57, 1);
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.plan-menu {
+    z-index: 999999;
+}
+
+.plan-menu ul {
+    list-style-type: none;
+}
+
+.plan-menu ul li {
+    display: block;
+    margin-left: 10px !important;
+}
+
+.menu .plan-menu {
+    line-height: 28px !important;
+}
+
+.plan-menu ul li a span {
+    font-size: 15px !important;
+    padding: 5px 0px !important;
+    margin-left: 10px !important;
+    border-bottom: 2px solid rgba(229, 229, 229, 1)!important;
+}
+
+/* Navigation Area End Here */
+
+/* Header Area Start Here */
+
+.header-area {
+    width: 100%;
+    height: 52px;
+    background-color: rgba(52, 89, 151, 1);
+    line-height: 52px;
+}
+
+.header-area ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-area ul li {
+    display: inline-block;
+    border-right: 3px solid #fff;
+    padding: 0px 20px;
+}
+
+.header-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.header-area ul li:first-child {
+    padding-left: 0px;
+}
+
+.header-area ul li:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+
+/* Header Area End Here */
+
+.validation-area {
+    padding: 75px 0px;
+    background: rgba(241, 241, 241, 1);
+}
+
+.validation-top {
+    width: 100%;
+    height: 126px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.validation-top h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(71, 71, 71, 1);
+    margin-bottom: 20px;
+    padding: 0px 15px;
+}
+
+.input-icons {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icons input {
+    height: 36px;
+    width: 415px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 0;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0px 0px 0px 50px;
+}
+
+.input-icons img {
+    position: absolute;
+    left: 18px;
+    top: 11px;
+}
+
+.input-icons input:focus {
+    outline: none;
+    border-color: #40bdee;
+}
+
+.verify-btn {
+    position: absolute;
+    width: 84px;
+    height: 35px;
+    font-size: 17px;
+    background: #0FD4AC;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-weight: 400;
+    right: 0px;
+}
+
+.validation-bottom {
+    width: 100%;
+    height: 302px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.validation-bottom h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(71, 71, 71, 1);
+    margin-bottom: 35px;
+    padding: 0px 20px;
+}
+
+.validation-bottom .elipse {
+    text-align: center;
+    position: relative;
+}
+
+.validation-bottom .elipse .short-logo img {
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    left: 170px;
+}
+
+.validation-bottom .status h4 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #DD8FA3;
+    margin-top: 15px;
+}
+
+.validation-right {
+    width: 100%;
+    height: 460px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 20px 35px;
+}
+
+.validation-right-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.validation-right-header h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #474747;
+    line-height: 35px;
+}
+
+.validation-right-header p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+
+.table-area {
+    width: 100%;
+    height: 340px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.table thead tr th {
+    border: none !important;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05) !important;
+    font-size: 10px !important;
+}
+
+.borderless td, .borderless th {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(79, 75, 75, 1);
+    padding: 6px 0px;
+}
+
+.valid-btn {
+    width: 49px;
+    height: 17px;
+    background: #ECFFFF;
+    border: 1px solid #D0F5F5;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Nunito';
+    font-size: 9px;
+    font-weight: 700;
+    color: #249898;
+}
+
+.invalid-btn {
+    width: 49px;
+    height: 17px;
+    background: #FFEEF2;
+    border: 1px solid #FCCED9;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Nunito';
+    font-size: 9px;
+    font-weight: 700;
+    color: #DD8FA3;
+}
+
+.pagination {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-button {
+    text-align: right;
+}
+
+.pagination-count h6 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #666C72;
+}
+
+.previous-btn, .next-btn {
+    border: none;
+    background: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666C72;
+}
+
+.active {
+    color: #0FD4AC;
+}

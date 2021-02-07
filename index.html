@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Single Validation</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 
+    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation Area Start Here -->
+    <section class="navigation-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="menu">
+                        <input type="checkbox" id="menu-btn" class="menu-btn">
+                        <label class="menu-icon" for="menu-btn">
+                            <span class="nav-icon"></span>
+                        </label>
+                        <ul class="menu-item">
+                            <li><a href="#"><img src="image/icon1.png" alt="" srcset=""><span>Email
+                                        Verification</span></a></li>
+                            <li><a href="#"><img src="image/icon2.png" alt="" srcset=""><span>Subscription</span></a>
+                            </li>
+                            <li><a href="#"><img src="image/icon3.png" alt="" srcset=""><span>Referral</span></a></li>
+                            <li><img class="user-img" src="image/user.png" alt="" srcset=""><span class="user-name"
+                                    style="margin-left: 10px;">Sakib...</span><span
+                                    style="margin-left: 15px; color: aqua; font-size: 20px;"><i onclick="myFunction()"
+                                        class="fa fa-caret-down dropbtn"></i>
+                                    <div id="myDIV" class="dropdown-content">
+                                        <div class="header-box">
+                                            <h6>PRO PLAN <span class="plan">1000 Varification / Month</span></h6>
+                                        </div>
+                                        <div class="plan-menu">
+                                            <ul>
+                                                <li><a href="#"><img src="image/personal.png" alt=""
+                                                            srcset=""><span>Personal Setting</span></a></li>
+                                                <li><a href="#"><img src="image/team.png" alt="" srcset=""><span>Team
+                                                            Setting</span></a></li>
+                                                <li><a href="#"><img src="image/work.png" alt=""
+                                                            srcset=""><span>Workspace Setting</span></a></li>
+                                                <li><a href="#"><img src="image/hand.png" alt=""
+                                                            srcset=""><span>Referral Payout</span></a></li>
+                                                <li><a href="#"><img src="image/logout.png" alt=""
+                                                            srcset=""><span>Logout</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- navigation Area End Here -->
+    <!-- Header Part Start Here -->
+    <section class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <ul>
+                        <li><a href="#">Single validation</a></li>
+                        <li><a href="#">Bulk validation</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- Header Part End Here -->
+
+    <section class="validation-area">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="validation-top">
+                        <h5>Single Email validation</h5>
+                        <div class="input-icons">
+                            <img src="image/mailicon2.png" alt="" srcset="">
+                            <input type="email" placeholder="Type your email..." required>
+                            <button class="verify-btn">Verify</button>
+                        </div>
+                    </div>
+                    <div class="validation-bottom">
+                        <h5>Validation Report</h5>
+                        <div class="elipse">
+                            <img src="image/elipse.png" alt="" srcset="">
+                            <div class="short-logo">
+                                <img src="image/shortlogo.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="status">
+                            <h4>INVALID</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="validation-right">
+                        <div class="validation-right-header">
+                            <h5>Single Validation History</h5>
+                            <p>EXPORT <span style="color: aqua; font-size: 20px;"><i
+                                        class="fa fa-caret-down"></i></span></p>
+                        </div>
+                        <div class="table-area">
+                            <table class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">EMAIL</th>
+                                        <th scope="col">STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="valid-btn">VALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="invalid-btn">INVALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="valid-btn">VALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="invalid-btn">INVALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="valid-btn">VALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="invalid-btn">INVALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="valid-btn">VALID</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>shaker.hossain87@gmail.com</td>
+                                        <td><button class="invalid-btn">INVALID</button></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination">
+                            <div class="pagination-count">
+                                <h6>Page 1 of 6</h6>
+                            </div>
+                            <div class="pagination-button">
+                                <button class="previous-btn">Previous</button>
+                                <button class="next-btn active">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDIV").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

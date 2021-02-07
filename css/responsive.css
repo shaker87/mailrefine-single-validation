@@ -1,0 +1,345 @@
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 479px) {
+    /* Navigation Area Style Start Here */
+    .menu .menu-item {
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .menu-item a {
+        padding: 10px 25px;
+        font-size: 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .user-img {
+        margin-left: 10px;
+    }
+    .user-name {
+        color: #fff;
+    }
+    .header-box {
+        height: 47px;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    .header-box h6 {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .header-box h6 span {
+        display: block;
+        font-size: 11px;
+        color: rgba(57, 57, 57, 1);
+        font-weight: 400;
+        margin-top: 2px;
+    }
+    .plan-menu {
+        z-index: 999999;
+    }
+    .plan-menu ul {
+        list-style-type: none;
+    }
+    .plan-menu ul li {
+        display: block;
+        margin-left: 0px !important;
+    }
+    .menu .plan-menu {
+        line-height: 28px !important;
+    }
+    .plan-menu ul li a span {
+        font-size: 15px !important;
+        padding: 0px 0px !important;
+        margin-left: 10px !important;
+        border: none !important;
+    }
+    /* Navigation Area Style End Here */
+    .input-icons input {
+        height: 35px;
+        width: 304px;
+        font-size: 13px;
+        font-weight: normal;
+        border: 0;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 0px 0px 0px 35px;
+    }
+    .input-icons img {
+        position: absolute;
+        left: 5px;
+        top: 11px;
+    }
+    .validation-bottom .elipse .short-logo img {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 115px;
+    }
+    .validation-right {
+        margin-top: 10px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .menu .menu-item {
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .menu-item a {
+        padding: 10px 25px;
+        font-size: 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .user-img {
+        margin-left: 10px;
+    }
+    .user-name {
+        color: #fff;
+    }
+    .header-box {
+        height: 47px;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    .header-box h6 {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .header-box h6 span {
+        display: block;
+        font-size: 11px;
+        color: rgba(57, 57, 57, 1);
+        font-weight: 400;
+        margin-top: 2px;
+    }
+    .plan-menu {
+        z-index: 999999;
+    }
+    .plan-menu ul {
+        list-style-type: none;
+    }
+    .plan-menu ul li {
+        display: block;
+        margin-left: 0px !important;
+    }
+    .menu .plan-menu {
+        line-height: 28px !important;
+    }
+    .plan-menu ul li a span {
+        font-size: 15px !important;
+        padding: 0px 0px !important;
+        margin-left: 10px !important;
+        border: none !important;
+    }
+    /* Navigation Area Style End Here */
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo img {
+        width: 120px;
+        height: 45px;
+    }
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        color: #000;
+    }
+    .menu .menu-item a span {
+        margin-left: 5px;
+    }
+    .menu ul li:last-child {
+        margin-left: 0px !important;
+    }
+    .validation-top {
+        width: 100%;
+        height: 126px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 7px;
+        padding: 10px;
+    }
+    .input-icons input {
+        height: 30px;
+        width: 250px;
+        font-size: 13px;
+        font-weight: normal;
+        border: 0;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 0px 0px 0px 30px;
+    }
+    .input-icons img {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+    }
+    .verify-btn {
+        position: absolute;
+        width: 65px;
+        height: 30px;
+        font-size: 15px;
+        background: #0FD4AC;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+        font-weight: 400;
+        right: 0px;
+    }
+    .validation-bottom .elipse .short-logo img {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 85px;
+    }
+    .validation-right-header h5 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #474747;
+        line-height: 35px;
+    }
+    .validation-right-header p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000000;
+    }
+    .borderless td, .borderless th {
+        font-family: 'Nunito';
+        font-weight: 600;
+        font-size: 13px;
+        color: rgba(79, 75, 75, 1);
+        padding: 6px 0px;
+    }
+}
+
+/* Iphone Layout: 414. */
+
+@media only screen and (min-width:414px) and (max-width: 736px) {
+    .validation-bottom .elipse .short-logo img {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 140px;
+    }
+}
+
+/* Ipad Pro Layout: 1024px. */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #000;
+    }
+    .menu .menu-item a span {
+        margin-left: 10px;
+    }
+    .menu ul li:last-child {
+        margin-left: 150px !important;
+    }
+    .input-icons input {
+        height: 36px;
+        width: 340px;
+        font-size: 14px;
+        font-weight: normal;
+        border: 0;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 0px 0px 0px 40px;
+    }
+    .input-icons img {
+        position: absolute;
+        left: 8px;
+        top: 11px;
+    }
+    .validation-bottom .elipse .short-logo img {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 135px;
+    }
+}
+
+/* Iphone 5/SE Layout: 320px. */
+
+/* @media only screen and (min-width: 320px) and (max-width: 568px) {
+    .input-icons input {
+        height: 35px;
+        width: 265px;
+        font-size: 13px;
+        font-weight: normal;
+        border: 0;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 0px 0px 0px 35px;
+    }
+    .validation-bottom .elipse .short-logo img {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 95px;
+    }
+
+    .validation-right {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        padding: 20px 35px;
+    }
+    .validation-right-header h5 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        color: #474747;
+        line-height: 35px;
+    }
+    .validation-right-header p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        color: #000000;
+    }
+    .table-area {
+        width: 100%;
+        height: 300px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .borderless td, .borderless th {
+        font-family: 'Nunito';
+        font-weight: 600;
+        font-size: 11px;
+        color: rgba(79, 75, 75, 1);
+        padding: 6px 0px;
+    }
+} */
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
