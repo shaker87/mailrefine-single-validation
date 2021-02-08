@@ -210,7 +210,7 @@ a, a:hover {
         position: absolute;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
-        height: 200px;
+        height: 205px;
         width: 180px;
         font-family: 'Nunito';
         border-radius: 0px 0px 5px 5px;
@@ -271,7 +271,7 @@ a, a:hover {
 
 .plan-menu ul li {
     display: block;
-    margin-left: 8px !important;
+    margin-left: 10px !important;
 }
 
 .menu .plan-menu {
@@ -297,15 +297,14 @@ a, a:hover {
 }
 
 .plan-menu ul li a span {
-    padding: 3px 0px !important;
+    padding: 2px 0px !important;
     margin-left: 8px !important;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: normal;
     font-size: 15px !important;
     line-height: 20px;
-    color: #393939;
-}
+    color: #393939;}
 
 /* Navigation Area End Here */
 
@@ -359,8 +358,7 @@ a, a:hover {
     width: 100%;
     height: 126px;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
-    border-radius: 7px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);    border-radius: 7px;
     padding: 15px;
 }
 
@@ -425,7 +423,7 @@ a, a:hover {
     height: 302px;
     margin-top: 30px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 15px;
 }
@@ -467,7 +465,7 @@ a, a:hover {
     width: 100%;
     height: 460px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 10px 35px;
 }
@@ -526,7 +524,7 @@ a, a:hover {
     color: #393939;
 }
 
-.export-menu ul li a.active{
+.export-menu ul li a.active {
     color: #0FD4AC;
 }
 
