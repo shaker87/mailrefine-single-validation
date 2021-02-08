@@ -12,9 +12,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- 
-    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
@@ -42,11 +41,11 @@
                             <span class="nav-icon"></span>
                         </label>
                         <ul class="menu-item">
-                            <li><a href="#"><img src="image/icon1.png" alt="" srcset=""><span>Email
+                            <li><a href="#"><i class="fa fa-envelope"></i><span>Email
                                         Verification</span></a></li>
-                            <li><a href="#"><img src="image/icon2.png" alt="" srcset=""><span>Subscription</span></a>
+                            <li><a href="#"><i class="fa fa-credit-card"></i><span>Subscription</span></a>
                             </li>
-                            <li><a href="#"><img src="image/icon3.png" alt="" srcset=""><span>Referral</span></a></li>
+                            <li><a href="#"><i class="fa fa-user-plus"></i><span>Referral</span></a></li>
                             <li><img class="user-img" src="image/user.png" alt="" srcset=""><span class="user-name"
                                     style="margin-left: 10px;">Sakib...</span><span
                                     style="margin-left: 15px; color: aqua; font-size: 20px;"><i onclick="myFunction()"
@@ -57,16 +56,15 @@
                                         </div>
                                         <div class="plan-menu">
                                             <ul>
-                                                <li><a href="#"><img src="image/personal.png" alt=""
-                                                            srcset=""><span>Personal Setting</span></a></li>
-                                                <li><a href="#"><img src="image/team.png" alt="" srcset=""><span>Team
-                                                            Setting</span></a></li>
-                                                <li><a href="#"><img src="image/work.png" alt=""
-                                                            srcset=""><span>Workspace Setting</span></a></li>
-                                                <li><a href="#"><img src="image/hand.png" alt=""
-                                                            srcset=""><span>Referral Payout</span></a></li>
-                                                <li><a href="#"><img src="image/logout.png" alt=""
-                                                            srcset=""><span>Logout</span></a></li>
+                                                <li class="new"><a href="#"><img src="image/personal.png"><span>Personal Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li class="new"><a href="#"><img src="image/team.png"><span>Team Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li><a href="#"><img src="image/work.png"><span>Workspace Setting</span></a></li>
+                                                <li class="borders"></li>
+                                                <li class="new"><a href="#"><img src="image/hand.png"><span>Referral Payout</span></a></li>
+                                                <li class="borders"></li>
+                                                <li><a href="#"><img src="image/logout.png"><span>Logout</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -101,9 +99,9 @@
                     <div class="validation-top">
                         <h5>Single Email validation</h5>
                         <div class="input-icons">
-                            <img src="image/mailicon2.png" alt="" srcset="">
                             <input type="email" placeholder="Type your email..." required>
-                            <button class="verify-btn">Verify</button>
+                            <i class="fa fa-envelope"></i>
+                            <button class="verify-btn">VERIFY</button>
                         </div>
                     </div>
                     <div class="validation-bottom">
@@ -124,8 +122,19 @@
                     <div class="validation-right">
                         <div class="validation-right-header">
                             <h5>Single Validation History</h5>
-                            <p>EXPORT <span style="color: aqua; font-size: 20px;"><i
-                                        class="fa fa-caret-down"></i></span></p>
+                            <p>EXPORT <span style="color: aqua; font-size: 20px; cursor: pointer;"><i onclick="exportMenu()"
+                                        class="fa fa-caret-down dropbtn"></i>
+                                        <div id="exportDIV" class="dropdown-content">
+                        
+                                            <div class="export-menu">
+                                                <ul>
+                                                    <li><a href="#">CSV</a></li>
+                                                    <div class="br"></div>
+                                                    <li><a href="#" class="active">EXCEL</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </span></p>
                         </div>
                         <div class="table-area">
                             <table class="table borderless">
@@ -192,6 +201,10 @@
         function myFunction() {
             document.getElementById("myDIV").classList.toggle("show");
         }
+        function exportMenu() {
+            document.getElementById("exportDIV").classList.toggle("show");
+        }
+       
 
         // Close the dropdown menu if the user clicks outside of it
         window.onclick = function (event) {
@@ -207,6 +220,8 @@
             }
         }
     </script>
+
+
 
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>

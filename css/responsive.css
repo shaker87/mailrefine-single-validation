@@ -50,13 +50,43 @@
     .menu .plan-menu {
         line-height: 28px !important;
     }
+    .menu .menu-item a {
+        padding: 10px 11px;
+        font-size: 15px;
+        display: block;
+        color: #fff !important;
+        text-decoration: none;
+    }
     .plan-menu ul li a span {
+        padding: 3px 0px !important;
+        margin-left: 8px !important;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
         font-size: 15px !important;
-        padding: 0px 0px !important;
-        margin-left: 10px !important;
+        line-height: 20px;
+        color: #fff;
+    }
+    .plan-menu ul li.new:before {
+        color: #E5E5E5;
+        content: "";
+        padding-right: 0;
+        position: relative;
+        left: -3px;
+        margin-left: 0px;
+    }
+    .plan-menu ul li.borders {
         border: none !important;
+        padding: 0;
+        margin: 0;
+        width: 130px;
+        margin-left: 0px !important;
     }
     /* Navigation Area Style End Here */
+    .input-icons {
+        position: relative;
+        display: inline-block;
+    }
     .input-icons input {
         height: 35px;
         width: 304px;
@@ -68,10 +98,12 @@
         border-radius: 20px;
         padding: 0px 0px 0px 35px;
     }
-    .input-icons img {
+    .input-icons i {
         position: absolute;
-        left: 5px;
-        top: 11px;
+        left: 0px;
+        top: 10px;
+        padding: 0px 15px;
+        font-size: 15px;
     }
     .validation-bottom .elipse .short-logo img {
         position: absolute;
@@ -80,7 +112,18 @@
         left: 115px;
     }
     .validation-right {
-        margin-top: 10px;
+        margin-top: 30px;
+    }
+    #exportDIV {
+        position: absolute;
+        width: 67px;
+        height: 58px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.08);
+        right: 45px;
+        top: 68px;
+        font-family: 'Nunito';
+        border-radius: 0px 0px 5px 5px;
     }
 }
 
@@ -135,11 +178,40 @@
     .menu .plan-menu {
         line-height: 28px !important;
     }
+    .menu .menu-item a {
+        padding: 10px 11px;
+        font-size: 15px;
+        display: block;
+        color: #fff !important;
+        text-decoration: none;
+    }
     .plan-menu ul li a span {
+        padding: 3px 0px !important;
+        margin-left: 8px !important;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: normal;
         font-size: 15px !important;
-        padding: 0px 0px !important;
-        margin-left: 10px !important;
+        line-height: 20px;
+        color: #fff;
+    }
+    .plan-menu ul li.new:before {
+        color: #E5E5E5;
+        content: "";
+        padding-right: 0;
+        position: relative;
+        left: -3px;
+        margin-left: 0px;
+    }
+    .plan-menu ul li.borders {
         border: none !important;
+        padding: 0;
+        margin: 0;
+        width: 130px;
+        margin-left: 0px !important;
+    }
+    .validation-right {
+        margin-top: 30px;
     }
     /* Navigation Area Style End Here */
 }
@@ -172,6 +244,9 @@
         border-radius: 7px;
         padding: 10px;
     }
+    .input-icons {
+        position: relative;
+    }
     .input-icons input {
         height: 30px;
         width: 250px;
@@ -183,10 +258,12 @@
         border-radius: 20px;
         padding: 0px 0px 0px 30px;
     }
-    .input-icons img {
+    .input-icons i {
         position: absolute;
-        left: 5px;
-        top: 8px;
+        left: 0px;
+        top: 7px;
+        padding: 0px 8px;
+        font-size: 16px;
     }
     .verify-btn {
         position: absolute;
@@ -205,6 +282,9 @@
         text-align: center;
         top: 45px;
         left: 85px;
+    }
+    .validation-right {
+        margin-top: 30px;
     }
     .validation-right-header h5 {
         font-family: 'Nunito';
@@ -239,8 +319,10 @@
         top: 45px;
         left: 140px;
     }
+    .validation-right {
+        margin-top: 30px;
+    }
 }
-
 
 /* Medium Layout: 1280px. */
 
