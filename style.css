@@ -425,6 +425,8 @@ a, a:hover {
 }
 .verify-btn:hover{
     background-color: #345997;
+    color: #fff;
+    
 }
 
 .validation-bottom {
