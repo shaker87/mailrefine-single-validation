@@ -111,12 +111,7 @@
         height: 35px;
         font-size: 17px;
     }
-    .validation-bottom .elipse .short-logo img {
-        position: absolute;
-        text-align: center;
-        top: 45px;
-        left: 53px;
-    }
+
     .validation-right {
         margin-top: 30px;
     }
@@ -286,12 +281,7 @@
         top: 0px;
         right: 0px;
     }
-    .validation-bottom .elipse .short-logo img {
-        position: absolute;
-        text-align: center;
-        top: 47px;
-        left: 50px;
-    }
+
     .validation-right-header h5 {
         font-family: 'Nunito';
         font-style: normal;
@@ -319,11 +309,6 @@
 /* Iphone Layout: 414. */
 
 @media only screen and (min-width:414px) and (max-width: 736px) {
-    .validation-bottom .elipse .short-logo img {
-        position: absolute;
-        top: 45px;
-        left: 53px;
-    }
     .validation-right {
         margin-top: 30px;
     }

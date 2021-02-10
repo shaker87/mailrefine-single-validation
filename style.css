@@ -474,9 +474,8 @@ a, a:hover {
 
 .validation-bottom .elipse .short-logo img {
     position: absolute;
-    /* text-align: center; */
-    top: 45px;
-    left: 53px;
+    top: 30%;
+    left: 30%;
     z-index: 999;
 }
 
