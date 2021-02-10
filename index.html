@@ -48,7 +48,7 @@
                             <li><a href="#"><i class="fa fa-user-plus"></i><span>Referral</span></a></li>
                             <li><img class="user-img" src="image/user.png" alt="" srcset=""><span class="user-name"
                                     style="margin-left: 10px;">Sakib...</span><span
-                                    style="margin-left: 15px; color: aqua; font-size: 20px;"><i onclick="myFunction()"
+                                    style="margin-left: 15px; color: #0FD4AC; font-size: 20px;"><i onclick="myFunction()"
                                         class="fa fa-caret-down dropbtn"></i>
                                     <div id="myDIV" class="dropdown-content">
                                         <div class="header-box">
@@ -56,13 +56,17 @@
                                         </div>
                                         <div class="plan-menu">
                                             <ul>
-                                                <li class="new"><a href="#"><img src="image/personal.png"><span>Personal Setting</span></a></li>
+                                                <li class="new"><a href="#"><img src="image/personal.png"><span>Personal
+                                                            Setting</span></a></li>
                                                 <li class="borders"></li>
-                                                <li class="new"><a href="#"><img src="image/team.png"><span>Team Setting</span></a></li>
+                                                <li class="new"><a href="#"><img src="image/team.png"><span>Team
+                                                            Setting</span></a></li>
                                                 <li class="borders"></li>
-                                                <li><a href="#"><img src="image/work.png"><span>Workspace Setting</span></a></li>
+                                                <li><a href="#"><img src="image/work.png"><span>Workspace
+                                                            Setting</span></a></li>
                                                 <li class="borders"></li>
-                                                <li class="new"><a href="#"><img src="image/hand.png"><span>Referral Payout</span></a></li>
+                                                <li class="new"><a href="#"><img src="image/hand.png"><span>Referral
+                                                            Payout</span></a></li>
                                                 <li class="borders"></li>
                                                 <li><a href="#"><img src="image/logout.png"><span>Logout</span></a></li>
                                             </ul>
@@ -107,7 +111,6 @@
                     <div class="validation-bottom">
                         <h5>Validation Report</h5>
                         <div class="elipse">
-                            <img src="image/elipse.png" alt="" srcset="">
                             <div class="short-logo">
                                 <img src="image/shortlogo.png" alt="" srcset="">
                             </div>
@@ -122,18 +125,18 @@
                     <div class="validation-right">
                         <div class="validation-right-header">
                             <h5>Single Validation History</h5>
-                            <p>EXPORT <span style="color: aqua; font-size: 20px; cursor: pointer;"><i onclick="exportMenu()"
-                                        class="fa fa-caret-down dropbtn"></i>
-                                        <div id="exportDIV" class="dropdown-content">
-                        
-                                            <div class="export-menu">
-                                                <ul>
-                                                    <li><a href="#">CSV</a></li>
-                                                    <div class="br"></div>
-                                                    <li><a href="#" class="active">EXCEL</a></li>
-                                                </ul>
-                                            </div>
+                            <p>EXPORT <span style="color: #0FD4AC; font-size: 20px; cursor: pointer;"><i
+                                        onclick="exportMenu()" class="fa fa-caret-down dropbtn"></i>
+                                    <div id="exportDIV" class="dropdown-content">
+
+                                        <div class="export-menu">
+                                            <ul>
+                                                <li><a href="#">CSV</a></li>
+                                                <div class="br"></div>
+                                                <li><a href="#" class="active">EXCEL</a></li>
+                                            </ul>
                                         </div>
+                                    </div>
                                 </span></p>
                         </div>
                         <div class="table-area">
@@ -197,14 +200,14 @@
     </section>
 
     <script>
-
-        function myFunction() {
-            document.getElementById("myDIV").classList.toggle("show");
-        }
         function exportMenu() {
             document.getElementById("exportDIV").classList.toggle("show");
         }
-       
+        function myFunction() {
+            document.getElementById("myDIV").classList.toggle("show");
+        }
+
+
 
         // Close the dropdown menu if the user clicks outside of it
         window.onclick = function (event) {
