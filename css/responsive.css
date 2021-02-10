@@ -105,6 +105,12 @@
         padding: 0px 15px;
         font-size: 15px;
     }
+    .verify-btn {
+        position: absolute;
+        width: 84px;
+        height: 35px;
+        font-size: 17px;
+    }
     .validation-bottom .elipse .short-logo img {
         position: absolute;
         text-align: center;
@@ -268,13 +274,16 @@
     .verify-btn {
         position: absolute;
         width: 65px;
-        height: 30px;
+        height: 29px;
         font-size: 15px;
         background: #0FD4AC;
         color: #fff;
-        border-radius: 20px;
+        border-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         border: none;
         font-weight: 400;
+        top: 0px;
         right: 0px;
     }
     .validation-bottom .elipse .short-logo img {
@@ -283,9 +292,6 @@
         top: 47px;
         left: 50px;
     }
-    /* .validation-right {
-        margin-top: 30px;
-    } */
     .validation-right-header h5 {
         font-family: 'Nunito';
         font-style: normal;
