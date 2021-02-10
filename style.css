@@ -31,6 +31,7 @@ img {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background: rgba(241, 241, 241, 1);
 }
 
 .test {
@@ -46,6 +47,7 @@ a, a:hover {
 .navigation-area {
     width: 100%;
     height: 56px;
+    background: #fff;
 }
 
 .navigation-area .logo {
@@ -210,7 +212,7 @@ a, a:hover {
         position: absolute;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
-        height: 200px;
+        height: 205px;
         width: 180px;
         font-family: 'Nunito';
         border-radius: 0px 0px 5px 5px;
@@ -271,7 +273,7 @@ a, a:hover {
 
 .plan-menu ul li {
     display: block;
-    margin-left: 8px !important;
+    margin-left: 10px !important;
 }
 
 .menu .plan-menu {
@@ -297,7 +299,7 @@ a, a:hover {
 }
 
 .plan-menu ul li a span {
-    padding: 3px 0px !important;
+    padding: 2px 0px !important;
     margin-left: 8px !important;
     font-family: 'Nunito';
     font-style: normal;
@@ -359,7 +361,7 @@ a, a:hover {
     width: 100%;
     height: 126px;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
     border-radius: 7px;
     padding: 15px;
 }
@@ -409,15 +411,20 @@ a, a:hover {
 .verify-btn {
     position: absolute;
     width: 84px;
-    height: 35px;
+    height: 36px;
     font-size: 17px;
     background: #0FD4AC;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     border: none;
     font-weight: 400;
     top: 0px;
     right: 0px;
+}
+.verify-btn:hover{
+    background-color: #345997;
 }
 
 .validation-bottom {
@@ -425,7 +432,7 @@ a, a:hover {
     height: 302px;
     margin-top: 30px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 15px;
 }
@@ -444,13 +451,31 @@ a, a:hover {
 .validation-bottom .elipse {
     text-align: center;
     position: relative;
+    width: 176px;
+    height: 176px;
+    background-color: #DD8FA3;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.elipse:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
 
 .validation-bottom .elipse .short-logo img {
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     top: 45px;
-    left: 170px;
+    left: 53px;
+    z-index: 999;
 }
 
 .validation-bottom .status h4 {
@@ -467,7 +492,7 @@ a, a:hover {
     width: 100%;
     height: 460px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 10px 35px;
 }
@@ -526,7 +551,7 @@ a, a:hover {
     color: #393939;
 }
 
-.export-menu ul li a.active{
+.export-menu ul li a.active {
     color: #0FD4AC;
 }
 
@@ -577,6 +602,15 @@ a, a:hover {
     color: #DD8FA3;
 }
 
+.valid-btn:hover {
+    background: #0FD4AC;
+    color: #fff;
+}
+.invalid-btn:hover {
+    background: #DD8FA3;
+    color: #fff;
+}
+
 .pagination {
     padding: 10px 0px;
     display: flex;
@@ -607,6 +641,6 @@ a, a:hover {
     color: #666C72;
 }
 
-.active {
+.previous-btn:hover, .next-btn:hover, .active{
     color: #0FD4AC;
 }
