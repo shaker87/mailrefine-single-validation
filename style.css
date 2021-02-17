@@ -161,6 +161,7 @@ a, a:hover {
     }
     .menu {
         width: 100%;
+        left: 0;
     }
     .menu .menu-item a {
         all: unset;
@@ -182,7 +183,7 @@ a, a:hover {
         margin-left: 0px;
     }
     .menu ul li:last-child {
-        margin-left: 200px;
+        margin-left: 213px;
     }
     .menu ul li a {
         font-style: normal;
@@ -216,6 +217,8 @@ a, a:hover {
         width: 180px;
         font-family: 'Nunito';
         border-radius: 0px 0px 5px 5px;
+        top: 56px;
+        right: 0px;
     }
     #exportDIV {
         position: absolute;
@@ -379,12 +382,13 @@ a, a:hover {
 
 .input-icons {
     position: relative;
+    width: 100%;
     display: inline-block;
 }
 
 .input-icons input {
     height: 36px;
-    width: 415px;
+    width: 100%;
     font-size: 14px;
     font-weight: normal;
     border: 0;
@@ -474,9 +478,8 @@ a, a:hover {
 
 .validation-bottom .elipse .short-logo img {
     position: absolute;
-    /* text-align: center; */
-    top: 45px;
-    left: 53px;
+    top: 28%;
+    left: 30%;
     z-index: 999;
 }
 
