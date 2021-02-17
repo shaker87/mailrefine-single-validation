@@ -468,10 +468,10 @@ a, a:hover {
 .elipse:after {
     content: "";
     position: absolute;
-    top: 35px;
-    left: 35px;
-    bottom: 35px;
-    right: 35px;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
     background-color: #FFFFFF;
     border-radius: 50%;
 }
@@ -479,7 +479,7 @@ a, a:hover {
 .validation-bottom .elipse .short-logo img {
     position: absolute;
     top: 28%;
-    left: 30%;
+    left: 29%;
     z-index: 999;
 }
 
@@ -581,40 +581,21 @@ a, a:hover {
     padding: 7px 0px;
 }
 
-.valid-btn {
-    width: 49px;
-    height: 17px;
-    background: #ECFFFF;
-    border: 1px solid #D0F5F5;
-    box-sizing: border-box;
-    border-radius: 7px;
+td.valid {
     font-family: 'Nunito';
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
     color: #249898;
 }
 
-.invalid-btn {
-    width: 49px;
-    height: 17px;
-    background: #FFEEF2;
-    border: 1px solid #FCCED9;
-    box-sizing: border-box;
-    border-radius: 7px;
+td.invalid{
     font-family: 'Nunito';
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
     color: #DD8FA3;
 }
 
-.valid-btn:hover {
-    background: #0FD4AC;
-    color: #fff;
-}
-.invalid-btn:hover {
-    background: #DD8FA3;
-    color: #fff;
-}
+
 
 .pagination {
     padding: 10px 0px;
