@@ -85,11 +85,12 @@
     /* Navigation Area Style End Here */
     .input-icons {
         position: relative;
+        width: 100%;
         display: inline-block;
     }
     .input-icons input {
         height: 35px;
-        width: 304px;
+        width: 100%;
         font-size: 13px;
         font-weight: normal;
         border: 0;
@@ -247,10 +248,11 @@
     }
     .input-icons {
         position: relative;
+        width: 100%;
     }
     .input-icons input {
         height: 30px;
-        width: 250px;
+        width: 100%;
         font-size: 13px;
         font-weight: normal;
         border: 0;
