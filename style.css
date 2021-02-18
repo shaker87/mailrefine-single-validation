@@ -161,6 +161,7 @@ a, a:hover {
     }
     .menu {
         width: 100%;
+        left: 0;
     }
     .menu .menu-item a {
         all: unset;
@@ -182,7 +183,7 @@ a, a:hover {
         margin-left: 0px;
     }
     .menu ul li:last-child {
-        margin-left: 200px;
+        margin-left: 213px;
     }
     .menu ul li a {
         font-style: normal;
@@ -216,6 +217,8 @@ a, a:hover {
         width: 180px;
         font-family: 'Nunito';
         border-radius: 0px 0px 5px 5px;
+        top: 56px;
+        right: 0px;
     }
     #exportDIV {
         position: absolute;
@@ -379,12 +382,13 @@ a, a:hover {
 
 .input-icons {
     position: relative;
+    width: 100%;
     display: inline-block;
 }
 
 .input-icons input {
     height: 36px;
-    width: 415px;
+    width: 100%;
     font-size: 14px;
     font-weight: normal;
     border: 0;
@@ -423,8 +427,10 @@ a, a:hover {
     top: 0px;
     right: 0px;
 }
-.verify-btn:hover{
+
+.verify-btn:hover {
     background-color: #345997;
+    color: #fff;
 }
 
 .validation-bottom {
@@ -462,19 +468,18 @@ a, a:hover {
 .elipse:after {
     content: "";
     position: absolute;
-    top: 35px;
-    left: 35px;
-    bottom: 35px;
-    right: 35px;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
     background-color: #FFFFFF;
     border-radius: 50%;
 }
 
 .validation-bottom .elipse .short-logo img {
     position: absolute;
-    /* text-align: center; */
-    top: 45px;
-    left: 53px;
+    top: 28%;
+    left: 29%;
     z-index: 999;
 }
 
@@ -575,23 +580,29 @@ a, a:hover {
     color: rgba(79, 75, 75, 1);
     padding: 7px 0px;
 }
+tr th:last-child{
+    text-align: center;
+}
+tr td:last-child{
+    text-align: center;
+}
 
-.valid-btn {
-    width: 49px;
-    height: 17px;
+td.valid span {
+   padding: 2px 7px;
     background: #ECFFFF;
     border: 1px solid #D0F5F5;
     box-sizing: border-box;
     border-radius: 7px;
     font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
     font-size: 9px;
-    font-weight: 700;
     color: #249898;
 }
 
-.invalid-btn {
-    width: 49px;
-    height: 17px;
+
+td.invalid span {
+    padding: 2px 7px;
     background: #FFEEF2;
     border: 1px solid #FCCED9;
     box-sizing: border-box;
@@ -600,15 +611,6 @@ a, a:hover {
     font-size: 9px;
     font-weight: 700;
     color: #DD8FA3;
-}
-
-.valid-btn:hover {
-    background: #0FD4AC;
-    color: #fff;
-}
-.invalid-btn:hover {
-    background: #DD8FA3;
-    color: #fff;
 }
 
 .pagination {
@@ -641,6 +643,6 @@ a, a:hover {
     color: #666C72;
 }
 
-.previous-btn:hover, .next-btn:hover, .active{
+.previous-btn:hover, .next-btn:hover, .active {
     color: #0FD4AC;
 }
