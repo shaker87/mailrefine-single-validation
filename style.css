@@ -427,10 +427,10 @@ a, a:hover {
     top: 0px;
     right: 0px;
 }
-.verify-btn:hover{
+
+.verify-btn:hover {
     background-color: #345997;
     color: #fff;
-    
 }
 
 .validation-bottom {
@@ -580,22 +580,38 @@ a, a:hover {
     color: rgba(79, 75, 75, 1);
     padding: 7px 0px;
 }
+tr th:last-child{
+    text-align: center;
+}
+tr td:last-child{
+    text-align: center;
+}
 
-td.valid {
+td.valid span {
+   padding: 2px 7px;
+    background: #ECFFFF;
+    border: 1px solid #D0F5F5;
+    box-sizing: border-box;
+    border-radius: 7px;
     font-family: 'Nunito';
-    font-size: 10px;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
     color: #249898;
 }
 
-td.invalid{
+
+td.invalid span {
+    padding: 2px 7px;
+    background: #FFEEF2;
+    border: 1px solid #FCCED9;
+    box-sizing: border-box;
+    border-radius: 7px;
     font-family: 'Nunito';
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
     color: #DD8FA3;
 }
-
-
 
 .pagination {
     padding: 10px 0px;
@@ -627,6 +643,6 @@ td.invalid{
     color: #666C72;
 }
 
-.previous-btn:hover, .next-btn:hover, .active{
+.previous-btn:hover, .next-btn:hover, .active {
     color: #0FD4AC;
 }
